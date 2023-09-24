@@ -3,7 +3,7 @@ import { ContainerYCenterCenter } from '../../common/Containers';
 import { Description, HeaderFlexStart, Subtitle } from '../../common/Header';
 import MyChart from '../MyChart';
 
-const ChartInversion1 = () => {
+const ChartInversion2 = () => {
     useEffect(() => {
         document.title = "Mis Inversiones";
     }, []);
@@ -14,15 +14,15 @@ const ChartInversion1 = () => {
         <ContainerYCenterCenter style={{ paddingTop: '2rem', }}>
             <HeaderFlexStart>
                 <Subtitle style={{ color: '#434343' }}>
-                    Inversión para Corolla 2021
+                Inversión para Disneyland 2024
                 </Subtitle>
                 <Description style={{ textAlign: 'justify' }}>
-                    Este monto fue invertido en fondo <strong style={{ color: '#EB0129' }}>Fondo BANORTE NTEIPC+</strong> desde el <strong style={{ color: '#EB0129' }}>12 de diciembre de 2021</strong> una oportunidad que te permitirá obtener un rendimiento adicional a tus ahorros, sin requerir una permanencia mínima y con la liquidez inmediata que necesitas. Es importante destacar que esta inversión tiene un <strong style={{ color: '#EB0129' }}>riesgo altamente bajo</strong>, lo que significa que tus fondos estarán resguardados de manera segura mientras generan beneficios adicionales para ti.
+                    Este monto fue invertido en fondo <strong style={{ color: '#EB0129' }}>Fondo BANORTE NTEDLS+</strong> desde el <strong style={{ color: '#EB0129' }}>12 de diciembre de 2021</strong> una oportunidad que te permitirá obtener un rendimiento adicional a tus ahorros, sin requerir una permanencia mínima y con la liquidez inmediata que necesitas. Es importante destacar que esta inversión tiene un <strong style={{ color: '#EB0129' }}>riesgo altamente bajo</strong>, lo que significa que tus fondos estarán resguardados de manera segura mientras generan beneficios adicionales para ti.
                 </Description>
 
             </HeaderFlexStart>
             <MyChart
-                title='Inversión Corolla 2021'
+                title='Inversión  Disneyland 2024'
                 inversion={inversion}
                 labels = {labels}
                 ganancias = {ganancias}
@@ -31,4 +31,4 @@ const ChartInversion1 = () => {
     )
 }
 
-export default ChartInversion1;
+export default ChartInversion2;

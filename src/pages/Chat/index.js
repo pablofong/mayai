@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { styled } from '@mui/material';
-import { ContainerDefault, ContainerYCenterCenter, ContainerYCenterSpaceBetween } from '../../common/Containers';
+import { ContainerDefault, ContainerYCenterSpaceBetween } from '../../common/Containers';
 
 import { faPlus, faMessage } from '@fortawesome/free-solid-svg-icons';
 import { Title } from '../../common/Header';
@@ -10,28 +10,80 @@ import { faPaperPlane, } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Chat = () => {
+
     useEffect(() => {
         document.title = "Chat";
     }, []);
+    const [history, setHistory] = useState([
+        {
+            sender: 'Berny',
+            message: 'Hola cómo puedo ayudarte el día',
+        },
+        {
+            sender: 'user',
+            message: 'Quiero ayuda en',
+        },
+    ]);
 
     const [inputMessage, setInputMessage] = useState('');
-    const [chatHistory, setChatHistory] = useState([]);
 
     const handleSendMessage = () => {
         if (inputMessage.trim() !== '') {
-            // Create a new message object and add it to the chat history
             const newMessage = {
-                text: inputMessage,
-                sender: 'user', // You can distinguish between 'user' and 'bot' messages
+                sender: 'user',
+                message: inputMessage,
             };
 
-            setChatHistory([...chatHistory, newMessage]);
+            // Use the setHistory function to update the chat history
+            setHistory([...history, newMessage]);
 
-            // Clear the input field after sending the message
+            // Clear the input field by setting inputMessage to an empty string
             setInputMessage('');
+
+            // Log the updated history for verification
+            //console.log(history);
+            // Send the chat history to a server
+            sendChatHistoryToServer(history);
         }
     };
 
+
+    const sendChatHistoryToServer = async (chatHistory) => {
+
+        const url = 'http://localhost:5000/api/chat'; // Replace with your server's URL
+        // console.log(chatHistory);
+        // Create the object with the "history" key
+        const requestBody = {
+          history: chatHistory,
+        };
+        console.log(requestBody);
+      
+        try {
+          const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(requestBody), // Send the modified request body
+          });
+      
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+      
+          // Parse the JSON response
+          const responseData = await response.json();
+      
+          // Handle the response data as needed
+          console.log('Chat history sent successfully');
+          console.log(responseData);
+        //   setHistory(responseData.history);
+        } catch (error) {
+          // Handle errors here
+          console.error('Error sending chat history:', error);
+        }
+      };
+      
     return (
         <ContainerDefault style={{
             backgroundColor: '#E1E1E1',
@@ -72,7 +124,6 @@ const Chat = () => {
                                 width: '80%',
                                 display: 'flex',
                                 flexDirection: 'column',
-                                alignItems: 'flex-end',
                                 padding: '1rem',
                                 border: '1px solid #ccc',
                                 borderRadius: '4px',
@@ -80,19 +131,27 @@ const Chat = () => {
                             }}
                         >
                             {/* Render chat messages */}
-                            {chatHistory.map((message, index) => (
+                            {history.map((message, index) => (
                                 <div
                                     key={index}
                                     style={{
-                                        backgroundColor: message.sender === 'user' ? '#D50023' : '#eaeaea',
-                                        color: message.sender === 'user' ? '#fff' : '#333',
-                                        padding: '0.5rem',
-                                        borderRadius: '4px',
-                                        marginBottom: '0.5rem',
-                                        maxWidth: '70%',
+                                        display: 'flex',
+                                        width: '100%',
+                                        justifyContent: message.sender === 'user' ? 'flex-end' : 'flex-start',
+                                        marginBottom: '10px', // Adjust spacing between messages as needed
                                     }}
                                 >
-                                    {message.text}
+                                    <div
+                                        style={{
+                                            backgroundColor: message.sender === 'user' ? '#D50023' : '#333',
+                                            color: '#fff',
+                                            padding: '10px', // Add padding for better readability
+                                            borderRadius: '4px',
+                                            maxWidth: '70%', // Limit message width if necessary
+                                        }}
+                                    >
+                                        {message.message}
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -107,7 +166,7 @@ const Chat = () => {
                                         rows={2}
                                     />
                                 </InputContainer>
-                                <StartAdornment  onClick={handleSendMessage}>
+                                <StartAdornment onClick={handleSendMessage}>
                                     <FontAwesomeIcon icon={faPaperPlane} className="search-icon" />
                                 </StartAdornment>
                             </StartAndInputContainer>

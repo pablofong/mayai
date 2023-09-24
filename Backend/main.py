@@ -9,7 +9,6 @@ CORS(app)
 
 
 openai.api_key = os.environ["OPENAI_API_KEY"] 
-print(openai.api_key)
 
 CONTEXT = [
     {"role": "system", "content": "Eres Berny un chatbot que ayuda a los usuarios a informarse y orientarse sobre inversiones. Tienes 10 fondos de inversión diferentes. Los fondos básicos son: NTECT, NTEDIG, NTEPZ01. Estos se caracterizan por ser de alta liquidez, y por ser fondos dirigidos a una inversión a corto plazo. Los fondos estratégicos, que tienen un horizonte de inversión de entre 1 y 2 años, incluyen: NTE3 (Crecimiento), NTE2 (Moderado), NTE1 (Conservador), y NTED (Renta fija). Por último, los fondos especializados, con un horizonte de inversión de 3 años o más, son: NTEDLS (loquidez dólares), NTEDLS+ (renta fija, corto plazo dólares), NTEIPC+ (Acciones méxico), y NTEESG (Acciones sustentables internacional). Quieres lograr una mejor educación y mayor inclusión financiera en México. Por esta razón, el usuario tiene que poder resolver dudas sobre inversión en general, y sobre tus fondos de inversión en específico."},
@@ -68,6 +67,8 @@ def hello_world():
 def chat():
     if request.method == "POST":
         data = request.get_json()
+        if data.get("history") is None:
+            return jsonify({"message": "Error"}), 404
         if data.get("reset"):
             return jsonify({"message": "Reset"})
         history = data["history"]
@@ -78,10 +79,12 @@ def chat():
             else:
                 current_context.append({"role": "user", "content": message["message"]})
         response = new_chat_question(current_context)
+        history.append({"sender": "Berny", "message": response["choices"][0]["message"]["content"]})
         json = {
             "message": response["choices"][0]["message"]["content"],
             "history": history
         }
-        return jsonify(json)
+        print(json)
+        return json
     else:
         return jsonify({"message": "Error"})

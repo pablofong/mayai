@@ -1,13 +1,22 @@
 import { React, useEffect } from 'react';
+import { ContainerDefault, ContainerYCenterCenter } from '../../common/Containers';
+import { Title } from '../../common/Header';
 
+import ChartInversion1 from '../../components/ChartInversion1';
 const MisInversiones = () => {
     useEffect(() => {
         document.title = "Mis Inversiones";
     }, []);
     return (
-        <>
-            <h1>Mis Inversiones</h1>
-        </>
+        <ContainerDefault>
+            <ContainerYCenterCenter style={{paddingTop: '2rem',}}>
+                <Title style={{ color: '#434343' }}>
+                    Este es el rendimiento de tus inversiones al momento
+                </Title>
+                <ChartInversion1/>
+            </ContainerYCenterCenter>
+        </ContainerDefault>
+
     )
 }
 

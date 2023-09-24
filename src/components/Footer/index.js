@@ -1,4 +1,4 @@
-import logoHSDA from '../../images/logotype-hsda-dark-background.svg';
+import logoBanorte from '../../images/banortelonglogo.png';
 import { styled, Grid } from '@mui/material';
 
 //FaIcons
@@ -17,26 +17,29 @@ const Footer = () => {
         textDecoration: 'none',
         color: 'inherit'
       }}>
-        <Logo src={logoHSDA} alt="logo" />
+        <Logo
+          style={{
+            width: '9.755em',
+            height: '2rem',
+            filter: 'brightness(0) invert(1)',
+          }}
+          src={logoBanorte}
+          alt="logo" />
       </a>
       <ContainerYCenterCenter >
         <ContainerFooterTags>
-          <a href="/terminosycondiciones" style={{ textDecoration: 'none', color: 'inherit' }}>Términos y Condiciones</a>
-          <a href="/avisoprivacidad" style={{ textDecoration: 'none', color: 'inherit' }}>Aviso Privacidad</a>
-          <a href="/contacto" style={{ textDecoration: 'none', color: 'inherit' }}>Contacto</a>
-          <a href="/formulario-preadmision" style={{ textDecoration: 'none', color: 'inherit' }}>Pre-admisión</a>
+          <a href="https://www.banorte.com/wps/portal/gfb?uri=nm:oid:banorte-te-informa.terminos-legales" style={{ textDecoration: 'none', color: 'inherit' }}>Términos Legales</a>
+          <a href="https://www.banorte.com/wps/portal/gfb?uri=nm:oid:banorte-te-informa.aviso-de-privacidad" style={{ textDecoration: 'none', color: 'inherit' }}>Aviso de Privacidad</a>
+          <a href="https://www.banorte.com/wps/portal/banorte/Home/inicio/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi3Y0MLTyMnQ28_QNCjQ0cnf1DnQNMXYxCzMz1wwkpiAJKG-AAjgZA_VFgJc7ujh4m5j4GBv4m7kYGjhZ-XibBppZGBp5mUAV4zCjIjTDIdFRUBADVkOkP/?uri=nm:oid:consulta-costos-y-comisiones" style={{ textDecoration: 'none', color: 'inherit' }}>Consulta los costos y las comisiones de nuestros productos</a>
         </ContainerFooterTags>
-        <ContainerFooterTags style={{marginTop: '1rem'}}>
-          <a href="/formulario-presupuesto" style={{ textDecoration: 'none', color: 'inherit' }}>Presupuesto</a>
-          <a href="/formulario-solicitud-recorrido" style={{ textDecoration: 'none', color: 'inherit' }}>Solicitud de recorrido</a>
-          <a href="/formulario-credencializacion" style={{ textDecoration: 'none', color: 'inherit' }}>Credencialización</a>
-          <a href="/menucafeteria" style={{ textDecoration: 'none', color: 'inherit' }}>Menú de cafetería</a>
+        <ContainerFooterTags>
+          2023 Grupo Financiero Banorte. Derechos reservados.
         </ContainerFooterTags>
       </ContainerYCenterCenter>
 
-      <ContainerXCenter style={{gap: '1rem'}}>
+      <ContainerXCenter style={{ gap: '1rem' }}>
         <a
-          href='https://www.facebook.com/hospitalsandiegodealcala/'
+          href='https://www.facebook.com/banorte'
           style={{ color: '#fff', fontSize: '1.5em' }}
         >
           <FontAwesomeIcon
@@ -44,7 +47,7 @@ const Footer = () => {
           />
         </a>
         <a
-          href='https://www.instagram.com/hospitalsandiegodealcala/?hl=en'
+          href='https://www.instagram.com/banorte_mx/'
           style={{ color: '#fff', fontSize: '1.5em' }}
         >
           <FontAwesomeIcon
@@ -66,15 +69,16 @@ const FooterContainer = styled(Grid)(({ theme }) => ({
   bottom: 0,
   zIndex: '999',
   padding: '1rem 5rem',
-  backgroundColor: theme.palette.blueberry.main,
+  backgroundColor: theme.palette.red.main,
   color: theme.palette.white.main,
   fontSize: '1rem',
-  fontFamily: 'Avenir',
-  [theme.breakpoints.down('lg')]: {
+  fontFamily: 'Lato-Regular',
+  [theme.breakpoints.down('sm')]: {
     display: 'flex',
     flexDirection: 'column',
     padding: '0',
-    paddingBottom: '2rem',
+    padding: '2rem 0',
+
     alignItems: 'center',
     justifyContent: 'center',
   },

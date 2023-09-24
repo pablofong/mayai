@@ -5,7 +5,7 @@ import Chat from './pages/Chat';
 import MisInversiones from './pages/MisInversiones';
 import MiPerfil from './pages/MiPerfil';
 import Navbar from './components/Navbar';
-
+import Footer from './components/Footer';
 function App() {
   return (
 <BrowserRouter>
@@ -17,7 +17,7 @@ function App() {
         <Route path="/miperfil" element={<MiPerfil />} />
         <Route path="*" element={<Home />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

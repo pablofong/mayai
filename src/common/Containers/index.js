@@ -13,14 +13,6 @@ const ContainerDefault = styled('div')(({ theme }) => ({
     padding: '4rem 2rem 2rem',
 }))
 
-const ContainerYCenterCenter = styled('div')(({ theme }) => ({
-    display: 'flex',
-    flexDirection: 'column',
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontFamily: 'Avenir',
-}));
 
 const ContainerYCenterFlexstart = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -61,6 +53,23 @@ const ContainerYSpaceBetween = styled('div')(({ theme }) => ({
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
+}));
+
+const ContainerYCenterSpaceBetween = styled('div')(({ theme }) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+    minHeight: '100%',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+}));
+
+const ContainerYCenterCenter = styled('div')(({ theme }) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
 }));
 
 const ContainerXSpaceBetween = styled('div')(({ theme }) => ({
@@ -112,6 +121,7 @@ const ContainerFooterTags = styled('div')(({ theme }) => ({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    fontFamily: 'Lato-Regular',
     [theme.breakpoints.down('lg')]: {
         flexDirection: 'column',
         justifyContent: 'center',
@@ -119,4 +129,4 @@ const ContainerFooterTags = styled('div')(({ theme }) => ({
         alignItems: 'center',
     },
 }));
-export { Content, ContainerDefault, ContainerFooterTags,  ContainerYCenterCenter, ContainerYSpaceBetween, ContainerYCenterFlexend, ContainerYCenterFlexstart, ContainerXFlexstart, ContainerXSpaceBetween, ContainerXCenter, ContainerGrid, InputContainer };
+export { Content, ContainerDefault, ContainerFooterTags,  ContainerYCenterCenter, ContainerYSpaceBetween, ContainerYCenterFlexend, ContainerYCenterFlexstart, ContainerYCenterSpaceBetween, ContainerXFlexstart, ContainerXSpaceBetween, ContainerXCenter, ContainerGrid, InputContainer };

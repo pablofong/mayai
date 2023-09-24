@@ -40,8 +40,8 @@ const Title = styled('div')(({ theme }) => ({
 const Description = styled('div')(({ theme }) => ({
     fontSize: '1rem',
     fontWeight: '500',
-    fontFamily: 'Lato-Regular',
-    color: theme.palette.pencilgray.main,
+    fontFamily: 'Lato-Light',
+    color: theme.palette.gray.main,
     [theme.breakpoints.up('xl')]: {
         fontSize: '1.5rem',
     },

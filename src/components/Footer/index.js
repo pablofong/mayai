@@ -76,9 +76,7 @@ const FooterContainer = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     display: 'flex',
     flexDirection: 'column',
-    padding: '0',
     padding: '2rem 0',
-
     alignItems: 'center',
     justifyContent: 'center',
   },

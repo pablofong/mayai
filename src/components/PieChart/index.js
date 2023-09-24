@@ -30,7 +30,7 @@ const PieChart = () => {
                     },
                     title: {
                         display: true,
-                        text: 'Chart.js Pie Chart',
+                        text: 'Rendimientos de mis inversiones',
                     },
                 },
             },

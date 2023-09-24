@@ -2,7 +2,7 @@ import { styled, Grid } from '@mui/material';
 import { React } from "react";
 import { tendenciasItems } from "./tendenciasItems";
 import { estaticosItems } from "./estaticosItems";
-import { Subtitle } from '../../common/Header';
+import { Description, Subtitle } from '../../common/Header';
 import { ContainerDefault, ContainerYCenterCenter } from '../../common/Containers';
 import { motion } from 'framer-motion';
 
@@ -11,7 +11,10 @@ const Inversiones = () => {
     return (
         <ContainerDefault>
             <ContainerYCenterCenter style={{ gap: '2rem' }}>
-                <Subtitle style={{ color: '#6A6867' }}>Mira las tendencias de inversión</Subtitle>
+                <div>
+                    <Subtitle style={{ color: '#6A6867' }}>Mira las tendencias de inversión</Subtitle>
+                    <Description>Selecciona tu próxima meta y ajustaremos un plan a tu medida</Description>
+                </div>
                 <ItemsGrid>
                     {tendenciasItems.map((item, index) => {
                         return (
@@ -30,8 +33,10 @@ const Inversiones = () => {
                         )
                     })}
                 </ItemsGrid>
-
-                <Subtitle style={{ color: '#6A6867' }}>Otras inversiones</Subtitle>
+                <div>
+                    <Subtitle style={{ color: '#6A6867' }}>Otras inversiones</Subtitle>
+                    <Description>Selecciona tu próxima meta a largo plazo y ajustaremos un plan a tu medida</Description>
+                </div>
                 <ItemsGrid>
                     {estaticosItems.map((item, index) => {
                         return (

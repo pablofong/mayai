@@ -6,7 +6,7 @@ import "./styles.css";
 import { ContainerYCenterCenter } from '../../common/Containers';
 import PrimaryButton from '../../common/PrimaryButton';
 import background from '../../images/backgroundHeroSection.jpg';
-import { Title } from '../../common/Header';
+import { Description, Title } from '../../common/Header';
 import TypingAnimation from '../../common/TypingAnimation';
 const HeroSection = () => {
     return (
@@ -17,6 +17,7 @@ const HeroSection = () => {
                     <Title>
                             <TypingAnimation text="¿En que quieres invertir hoy?" />
                     </Title>
+                    <Description style={{color: 'white'}}>Utiliza nuestro coach financiero para ver las mejores alternativas de inversión</Description>
                     <PrimaryButton
                         color="#F4F8FA"
                         backgroundColor="#EB0129"

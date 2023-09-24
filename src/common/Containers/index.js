@@ -106,10 +106,10 @@ const Content = styled('div')(({ theme }) => ({
 const InputContainer = styled('div')(({ theme }) => ({
     display: "grid",
     gridTemplateColumns: `repeat(2, 6fr)`,
-    gap: '0 4rem',
+    gap: '0 1rem',
     margin: '0 2rem',
     width: '100%',
-    [theme.breakpoints.down('lg')]: {
+    [theme.breakpoints.down('sm')]: {
         display: 'flex',
         flexDirection: 'column',
         padding: '0.625rem 1.875rem',
@@ -122,7 +122,7 @@ const ContainerFooterTags = styled('div')(({ theme }) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     fontFamily: 'Lato-Regular',
-    [theme.breakpoints.down('lg')]: {
+    [theme.breakpoints.down('sm')]: {
         flexDirection: 'column',
         justifyContent: 'center',
         gap: '1rem',

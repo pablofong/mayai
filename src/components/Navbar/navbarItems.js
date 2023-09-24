@@ -8,8 +8,8 @@ export const navbarItems = [
         href: '/misinversiones',
     },
     {
-        title: 'Mi Cuenta',
-        href: '/micuenta',
+        title: 'Invertir',
+        href: '/invertir',
     },
     {
         title: 'Chat',

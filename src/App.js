@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/misinversiones" element={<MisInversiones />} />
-        <Route path="/miperfil" element={<MiPerfil />} />
+        <Route path="/invertir" element={<MiPerfil />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

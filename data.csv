@@ -1,0 +1,61 @@
+prompt,completion
+¿Qué clase de servicio es el que ofreces?,Soy un chatbot que te ayuda a resolver dudas sobre instrumentos de inversión facilitándote el invertir en instrumentos de Banorte.
+¿Cuál es tu objetivo?,Quiero ayudarte a resolver dudas sobre inversión en general y ayudarte a sugerir los instrumentos que mejor se acoplen a tu inversión.
+¿Qué es un instrumento de inversión?,Un instrumento de inversión es un activo financiero que te permite hacer que tu dinero crezca a través del tiempo.
+¿De qué me sirve invertir?,Invertir te ayuda a hacer que tu dinero incremente su valor y te puede ayudar para cumplir tus metas y gastos futuros.
+¿Cuál es tu nombre?,"Mi nombre es Berny, y soy un chatbot que te ayuda a informarte y orientarte sobre inversiones."
+¿Cuántos fondos de inversión ofrece Banorte?,Banorte ofrece un total de 10 fondos de inversión diferentes.
+¿Cuáles son los fondos básicos de Banorte?,"Los fondos básicos de Banorte son NTECT, NTEDIG y NTEPZO01."
+Hola,"Hola, soy Berny, un chatbot que te ayuda a resolver dudas sobre instrumentos de inversión. ¿En qué te puedo ayudar?"
+Hola Berny, "Hola. ¿En qué te puedo ayudar sobre temas de inversión?" 
+¿Qué caracteriza a los fondos básicos de Banorte?,Los fondos básicos se caracterizan por ser de alta liquidez y dirigidos a una inversión a corto plazo.
+¿Cuáles son los fondos estratégicos de Banorte?,"Los fondos estratégicos de Banorte son NTE3 (Crecimiento), NTE2 (Moderado), NTE1 (Conservador) y NTED (Renta fija)."
+¿Cuál es el horizonte de inversión de los fondos estratégicos?,Los fondos estratégicos tienen un horizonte de inversión de entre 1 y 2 años.
+¿Cuáles son los fondos especializados de Banorte?,"Los fondos especializados de Banorte son NTEDLS (Liquidez en dólares), NTEDLS+ (Renta fija a corto plazo en dólares), NTEIPC+ (Acciones en México) y NTEESG (Acciones sustentables internacional)."
+¿Cuál es el horizonte de inversión de los fondos especializados de Banorte?,Los fondos especializados tienen un horizonte de inversión de 3 años o más.
+¿Qué puedo saber sobre el fondo NTECT?,El fondo NTECT es conocido como Fondo Banorte Cete. Es un fondo de deuda que te permitirá obtener un rendimiento adicional a tus ahorros.
+¿Cuál es el riesgo asociado con el fondo NTECT?,"El riesgo del fondo NTECT es extremadamente bajo, ya que consiste en un fondo 100% de deuda con un horizonte de inversión a corto plazo."
+¿Cuál es la inversión mínima requerida para el fondo NTECT?,La inversión mínima requerida para el fondo NTECT es de $50.
+¿Puedes proporcionar más detalles sobre el fondo NTEDIG?,"Claro, el fondo NTEDIG es conocido como Fondo Banorte Digital. Es un fondo 100% de deuda con un horizonte de inversión a corto plazo."
+¿Cuál es el nivel de riesgo asociado con el fondo NTEDIG?,"El riesgo del fondo NTEDIG es extremadamente bajo, ideal para inversionistas que buscan estabilidad."
+¿Cuál es la inversión mínima requerida para el fondo NTEDIG?,La inversión mínima requerida para el fondo NTEDIG es de $50.
+¿Me puedes contar más sobre el fondo NTEPZO?,"Claro, el fondo NTEPZO es conocido como Fondo Banorte Plazo."
+¿Cuál es el nivel de riesgo asociado con el fondo NTEPZO?,"El riesgo del fondo NTEPZO también es extremadamente bajo, pero requiere una inversión mínima de $50,000."
+¿Cuál es el rendimiento objetivo del fondo NTEPZO?,El fondo NTEPZO tiene un rendimiento objetivo del 100% CETES a 91 días.
+¿Qué información puedes darme sobre el fondo NTEDLS?,El fondo NTEDLS es conocido como Fondo Banorte Dólares y está compuesto principalmente por activos de deuda denominados en dólares.
+¿Cuál es el nivel de riesgo asociado con el fondo NTEDLS?,"El riesgo del fondo NTEDLS es bajo, y su inversión mínima es de $50."
+¿Cómo protege el fondo NTEDLS el valor del dinero en fluctuaciones del tipo de cambio?,El fondo NTEDLS respalda el valor del dinero ante las fluctuaciones del tipo de cambio peso-dólar.
+¿Me puedes proporcionar más detalles sobre el fondo NTEDLS+?,"Por supuesto, el fondo NTEDLS+ es conocido como Fondo Banorte Dólares + y está compuesto principalmente por activos denominados en dólares."
+¿Cuál es el nivel de riesgo asociado con el fondo NTEDLS+?,"El riesgo del fondo NTEDLS+ es moderado, y su inversión mínima es de $50."
+¿Qué tipo de inversor es adecuado para el fondo NTEDLS+?,El fondo NTEDLS+ es adecuado para inversores conservadores que buscan hacer crecer su capital de manera estable.
+"Hola, tengo 22 años y quiero invertir en un dinero que quiero ahorrar para unas vacaciones en 2 años. ¿Qué fondo me recomiendas?","Hola, te recomiendo el fondo NTE2 (Moderado), ya que es un fondo de inversión de mediano plazo que te permitirá hacer crecer tu dinero de manera estable, inciando desde $100."
+Tengo 35 años y quiero guardar mi dinero para pagar el nacimiento de mi hijo en 9 meses. ¿Qué fondo me recomiendas?,"Hola, te recomiendo el fondo NTEDIG (Digital), ya que es un fondo de inversión de corto plazo que te permitirá hacer crecer tu dinero de manera segura y estable, sin riesgos"
+"Busco hacer dinero rápido, en menos de 1 año y medio para pagar mi boda en otro país, quiero pasar de 20000 a 45000","Te recomiendo invertir en el instrumento NTEDLS+, ya que este instrumento permite proteger el dinero con altas expectativas de rendimiento a través de  dólares"
+Quiero ahorrar mi dinero ¿Cómo puedo empezar?,Para empezar a ahorrar tu dinero te puedo recomendar que mes a mes guardes una parte del dinero que recibes y a partir de ahí puedes meterlo en algún instrumento de inversión como los que ofrecemos en Banorte.
+¿En qué consiste el fondo Banorte Cete?,"El Fondo Banorte Cete, NTECET, es un fondo de deuda de riesgo extremadamente bajo. Este fondo es ideal para un perfil de Preservación de Capital, que mantiene estable su capital sin correr riesgos."
+"Quiero invertir a corto plazo, ¿Qué instrumentos me recomiendas?","Te recomiendo invertir en fondos básicos si quieres invertir a corto plazo. En Banorte, estos fondos básicos son los que manejamos: NTECT, NTEDIG, y NTEPZO1."
+"Pienso invertir para un plazo mediano, entre 1 y 3 años. ¿Qué me recomiendas?","Te recomiendo invertir en fondos estratégicos, como NTE1, NTE2, NTE3, o NTED, que son los que manejamos en Banorte. Estos fondos de inversión tienen un horizonte de inversión mayor a 1 año." 
+¿Hay opciones de alta disponibilidad?,"Sí, tanto NTECET, NTEDIG y NTEPZO cuentan con disponibilidad para el mismo día, el resto de instrumentos tienen disponibilidad al día siguiente."
+¿Puedo perder mi dinero?,"Sí, las inversiones no son 100% aseguradas, sin embargo, en Banorte contamos con instrumentos de inversión de bajo riesgo que te permiten proteger tu dinero con expertos trabajando para que no pierdas tu dinero y en lugar de eso, lo hagas crecer."
+¿Qué tanto riesgo hay?,"El riesgo depende de la inversión que elijas, en Banorte contamos con inversiones desde un riesgo extremadamente bajo hasta riesgos muy altos, comúnmente mayor riesgo implica mayor oportunidad de rendimiento."
+¿Cómo puedo ganar más?,"Para ganar más puedes invertir en instrumentos de mayor riesgo, sin embargo, esto implica que también puedes perder más. En Banorte contamos con instrumentos de inversión de bajo riesgo, así como de alto riesgo."
+¿Qué es la calificación?,"La calificación es un indicador que indica el riesgo de un instrumento de inversión, están descrita por letras (La 'A' siendo la más baja y la 'AAA' siendo la más alta) y por números (El '1' siendo la más baja y el '3' siendo la más alta)."
+¿Qué es el rendimiento?,"El rendimiento es la ganancia que obtienes de tu inversión, se mide en porcentaje y puede ser positivo o negativo."
+¿Cómo puedo diversificar mis inversiones en Banorte?,"Puedes diversificar tus inversiones en Banorte eligiendo diferentes tipos de fondos, como los básicos, estratégicos y especializados, de acuerdo a tus objetivos financieros y perfil de riesgo."
+¿Cuáles son los instrumentos más seguros?,"Los instrumentos más seguros son los fondos básicos, ya que son de corto plazo y de bajo riesgo, como NTECT, NTEDIG y NTEPZO1."
+¿Cuál es la diferencia entre un fondo de inversión y una cuenta de ahorro?,"La principal diferencia es que un fondo de inversión te permite invertir tu dinero en diferentes activos, potencialmente generando un mayor rendimiento, mientras que una cuenta de ahorro es más segura pero ofrece un rendimiento menor."
+¿Cuál es el proceso para abrir una cuenta de inversión en Banorte?,"El proceso para abrir una cuenta de inversión en Banorte generalmente involucra proporcionar información personal, definir tus objetivos de inversión y elegir los fondos en los que deseas invertir. Puedes hacerlo en línea desde nuestra página Web, o desde la aplicación móvil."
+¿Cuáles son las comisiones asociadas a los fondos de inversión de Banorte?,"Las comisiones pueden variar según el fondo y el tipo de inversión, pero generalmente incluyen la comisión por administración y la comisión por rendimiento. Te recomiendo revisar las tarifas específicas de cada fondo antes de invertir."
+¿Qué son los dividendos en un fondo de inversión?,"Los dividendos en un fondo de inversión son los beneficios que se distribuyen a los inversionistas a partir de las ganancias generadas por el fondo. Estos pueden ser pagados en efectivo, o reinvertidos en el mismo fondo."
+¿Cuánto puedo ganar con NTECET
+¿Cómo puedo monitorear el rendimiento de mis inversiones en Banorte?,"Puedes monitorear el rendimiento de tus inversiones en Banorte a través de la plataforma en línea de Banorte, donde encontrarás información actualizada sobre el valor de tus inversiones y su rendimiento."
+¿Cuál es la diferencia entre un fondo de renta fija y un fondo de renta variable?,"Un fondo de renta fija invierte en activos de bajo riesgo, como bonos, y suele ofrecer rendimientos más estables. En contraste, un fondo de renta variable invierte en acciones y puede tener rendimientos más altos pero también más volatilidad."
+¿Qué estrategias puedo utilizar para minimizar el riesgo en mis inversiones?,"Puedes minimizar el riesgo diversificando tu cartera de inversiones, eligiendo fondos de inversión con un perfil de riesgo acorde a tus objetivos y horizonte de inversión, y manteniendo un enfoque a largo plazo."
+¿Cuál es la diferencia entre un fondo de inversión abierto y uno cerrado?,"Un fondo de inversión abierto permite a los inversionistas comprar o vender participaciones en cualquier momento, mientras que un fondo cerrado tiene un número fijo de participaciones y generalmente se negocia en el mercado secundario."
+¿Qué sucede si necesito retirar mi dinero de un fondo de inversión en Banorte antes de su vencimiento?,"En todos los fondos de inversión que tenemos en Banorte puedes retirar tu dinero cuando quieras. Lo único que cambia es el plazo en que ese retiro será efectivo. Algunos fondos son tienen un plazo de retiro inmediato, mientras que otros tardan al rededor de dos días para retirarlo."
+¿Cuál es el rendimiento esperado del fondo NTECT?,El rendimiento esperado del fondo de inversión NTECT es del 6.99% con base en datos históricos.
+¿Cuál es el rendimiento esperado del fondo NTEDIG?,El rendimiento esperado del fondo de inversión NTEDIG es del 8.39% con base en datos históricos.
+¿Cuál es el rendimiento esperado del fondo NTEPZO?,El rendimiento esperado del fondo de inversión NTEPZO es del 11% con base en datos históricos.
+¿Cuál es el rendimiento esperado del fonod NTEDLS?,El rendimiento esperado del fondo de inversión NTEDLS es del 9.39% con base en datos históricos.
+¿A partir de qué cantidad puedo invertir con Banorte?,A partir de $50 puedes comenzar a invertir en los fondos de inversión de Banorte.
+¿Necesito mucho dinero para comenzar a invertir?,"No, no necesitas ser millonario para poder invertir. Con Banorte puedes comenzar a invertir desde $50."
